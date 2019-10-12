@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import './index.css';
-import Reducers from './redux/reducers';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import './styles/styles.scss';
+
+import Reducers from 'rdx/reducers';
+import App from 'views/App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'styles/styles.scss';
+
+import * as serviceWorker from 'serviceWorker';
 
 let store = createStore(Reducers);
 
