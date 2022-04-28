@@ -1,0 +1,29 @@
+.upload{
+  padding: 25px;
+  .card{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+.uploader-btn{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor:pointer;
+  }
+
+  label{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+  }
+}

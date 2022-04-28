@@ -1,0 +1,14 @@
+body{
+  background-color: #EEE;
+}
+
+.button{
+  background-color: $primary;
+  color:#FFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 0 3em;
+  cursor:pointer;
+  border-radius: 5px;
+}

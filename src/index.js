@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import {
+  createStore,
+  applyMiddleware
+} from 'redux';
+import thunk from 'redux-thunk';
 
 import Reducers from 'rdx/reducers';
 import App from 'views/App';
@@ -11,7 +15,9 @@ import 'styles/styles.scss';
 
 import * as serviceWorker from 'serviceWorker';
 
-let store = createStore(Reducers);
+//let store = compose(applyMiddleware(thunk))(createStore)(Reducers);
+
+let store = createStore(Reducers,applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
